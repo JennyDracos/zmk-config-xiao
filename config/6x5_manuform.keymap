@@ -43,14 +43,14 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none       &none        &none            &none      &none       &none
 &none       &none         &none         &none         &to 0         &none         &kp K_REDO  &kp K_PASTE  &kp K_COPY       &kp K_CUT  &kp K_UNDO  &none
 &none       &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &none         &kp CAPS    &kp AMPS     &kp KP_MULTIPLY  &kp LPAR   &kp RPAR    &none
-&none       &none         &none         &to 0         &to 1         &none         &kp INS     &kp HOME     &kp PG_UP        &kp PG_DN  &kp END     &none
+&none       &none         &none         &to 2         &to 1         &none         &kp INS     &kp HOME     &kp PG_UP        &kp PG_DN  &kp END     &none
 &none       &none         &none         &none         &none         &none         &none       &kp BSPC     &kp DEL          &none      &kp RET     &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        raise_layer {
+        num_layer {
             // ------------------------------------------------------------------------------------------------------------
             // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
@@ -59,11 +59,11 @@
             // |     |     |      |      |      |        |                   |       |      |       |       |      |       |
 
             bindings = <
-&none      &trans  &trans  &trans   &trans   &trans   &trans       &trans     &trans     &trans    &trans     &bootloader
-&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5   &kp N6       &kp N7     &kp N8     &kp N9    &kp N0     &trans
-&kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6   &kp RET      &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
-&kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
-&trans     &trans  &trans  &trans   &trans   &trans   &trans       &trans     &trans     &trans    &trans     &trans
+&none  &none      &none   &none       &none   &none      &none  &none     &none     &none   &none        &none
+&none  &kp LBKT   &kp N7  &kp N8      &kp N9  &kp RBKT   &none  &to 0     &none     &none   &bootloader  &none
+&none  &kp SEMI   &kp N4  &kp N5      &kp N6  &kp EQUAL  &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT    &none
+&none  &kp GRAVE  &kp N1  &kp N2      &kp N3  &kp BSLH   &none  &to 2     &to 1     &none   &none        &none
+&none  &kp MINUS  &none   &kp PERIOD  &kp N0  &none      &none  &none     &none     &none   &none        &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
