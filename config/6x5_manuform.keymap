@@ -22,11 +22,11 @@
             // |    2   |  2  | f   | 6    | 4    | 1    |                    | 2    | 1     | w     | s    | n     |  a    |
 
             bindings = <
-&none  &none               &none           &none         &none        &none  &none  &none            &none        &none       &none        &none
-&none  &kp Q               &kp W           &kp F         &kp P        &kp B  &kp J  &kp L            &kp U        &kp Y       &kp SQT      &none
-&none  &mt LS(LEFT_WIN) A  &mt LEFT_ALT R  &mt LCTRL S   &mt LSHFT T  &kp G  &kp M  &mt RSHFT N      &mt RCTRL E  &mt RALT I  &mt RWIN O   &none
-&none  &kp Z               &kp X           &kp C         &kp D        &kp V  &kp K  &kp H            &kp COMMA    &kp PERIOD  &kp SLASH    &none
-&none  &lt 5 TAB           &none           &lt 3 ESCAPE  &lt 1 SPACE  &none  &none  &lt 2 BACKSPACE  &lt 4 DEL    &none       &lt 6 ENTER  &none
+&none  &none       &none           &none         &none        &none  &none  &none            &none        &none       &none           &none
+&none  &kp Q       &kp W           &kp F         &kp P        &kp B  &kp J  &kp L            &kp U        &kp Y       &kp SQT         &none
+&none  &mt LWIN A  &mt LEFT_ALT R  &mt LCTRL S   &mt LSHFT T  &kp G  &kp M  &mt LSHFT N      &mt LCTRL E  &mt LALT I  &mt LEFT_GUI O  &none
+&none  &kp Z       &kp X           &kp C         &kp D        &kp V  &kp K  &kp H            &kp COMMA    &kp PERIOD  &kp SLASH       &none
+&none  &lt 5 TAB   &none           &lt 3 ESCAPE  &lt 1 SPACE  &none  &none  &lt 2 BACKSPACE  &lt 4 DEL    &none       &lt 6 ENTER     &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -41,11 +41,11 @@
             // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none       &none        &none            &none      &none       &none
-&none       &bootloader   &none         &none         &to 0         &none         &kp K_REDO  &kp K_PASTE  &kp K_COPY       &kp K_CUT  &kp K_UNDO  &none
-&none       &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &none         &kp CAPS    &kp AMPS     &kp KP_MULTIPLY  &kp LPAR   &kp RPAR    &none
-&none       &none         &none         &to 2         &to 1         &none         &kp INS     &kp HOME     &kp PG_UP        &kp PG_DN  &kp END     &none
-&none       &none         &none         &none         &none         &none         &none       &kp BSPC     &kp DEL          &none      &kp RET     &none
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none       &none        &none       &none      &none       &none
+&none       &bootloader   &none         &none         &to 0         &none         &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &none
+&none       &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &none         &kp CAPS    &kp LEFT     &kp DOWN    &kp UP     &kp RIGHT   &none
+&none       &none         &none         &to 2         &to 1         &none         &kp INS     &kp HOME     &kp PG_UP   &kp PG_DN  &kp END     &none
+&none       &none         &none         &none         &none         &none         &none       &kp BSPC     &kp DEL     &none      &kp RET     &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -60,11 +60,11 @@
             // |     |     |      |      |      |        |                   |       |      |       |       |      |       |
 
             bindings = <
-&none  &none      &none   &none       &none   &none      &none  &none     &none     &none   &none        &none
-&none  &kp LBKT   &kp N7  &kp N8      &kp N9  &kp RBKT   &none  &to 0     &none     &none   &bootloader  &none
-&none  &kp SEMI   &kp N4  &kp N5      &kp N6  &kp EQUAL  &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT    &none
-&none  &kp GRAVE  &kp N1  &kp N2      &kp N3  &kp BSLH   &none  &to 2     &to 1     &none   &none        &none
-&none  &kp MINUS  &none   &kp PERIOD  &kp N0  &none      &none  &none     &none     &none   &none        &none
+&none  &none      &none   &none       &none   &none      &none  &none      &none      &none     &none        &none
+&none  &kp LBKT   &kp N7  &kp N8      &kp N9  &kp RBKT   &none  &to 0      &none      &none     &bootloader  &none
+&none  &kp SEMI   &kp N4  &kp N5      &kp N6  &kp EQUAL  &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI     &none
+&none  &kp GRAVE  &kp N1  &kp N2      &kp N3  &kp BSLH   &none  &to 2      &to 1      &none     &none        &none
+&none  &kp MINUS  &none   &kp PERIOD  &kp N0  &none      &none  &none      &none      &none     &none        &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
