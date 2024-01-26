@@ -22,11 +22,11 @@
             // |    2   |  2  | f   | 6    | 4    | 1    |                    | 2    | 1     | w     | s    | n     |  a    |
 
             bindings = <
-&none  &none               &none           &none         &none        &none  &none  &none            &none        &none       &none       &none
-&none  &kp Q               &kp W           &kp F         &kp P        &kp B  &kp J  &kp L            &kp U        &kp Y       &kp SQT     &none
-&none  &mt LS(LEFT_WIN) A  &mt LEFT_ALT R  &mt LCTRL S   &mt LSHFT T  &kp G  &kp M  &mt RSHFT N      &mt RCTRL E  &mt RALT I  &mt RWIN O  &none
-&none  &kp Z               &kp X           &kp C         &kp D        &kp V  &kp K  &kp H            &kp COMMA    &kp PERIOD  &kp SLASH   &none
-&none  &kp TAB             &none           &lt 3 ESCAPE  &lt 1 SPACE  &none  &none  &lt 2 BACKSPACE  &lt 4 DEL    &none       &kp ENTER   &none
+&none  &none               &none           &none         &none        &none  &none  &none            &none        &none       &none        &none
+&none  &kp Q               &kp W           &kp F         &kp P        &kp B  &kp J  &kp L            &kp U        &kp Y       &kp SQT      &none
+&none  &mt LS(LEFT_WIN) A  &mt LEFT_ALT R  &mt LCTRL S   &mt LSHFT T  &kp G  &kp M  &mt RSHFT N      &mt RCTRL E  &mt RALT I  &mt RWIN O   &none
+&none  &kp Z               &kp X           &kp C         &kp D        &kp V  &kp K  &kp H            &kp COMMA    &kp PERIOD  &kp SLASH    &none
+&none  &lt 5 TAB           &none           &lt 3 ESCAPE  &lt 1 SPACE  &none  &none  &lt 2 BACKSPACE  &lt 4 DEL    &none       &lt 6 ENTER  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -92,11 +92,21 @@
 
         mouse_layer {
             bindings = <
-&none  &none     &none     &none      &none      &none  &none       &none        &none       &none      &none       &none
-&none  &none     &none     &none      &to 0      &none  &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &none       &none        &none       &none      &none       &none
-&none  &none     &none     &none      &to 5      &none  &none       &none        &none       &none      &none       &none
-&none  &none     &none     &none      &none      &none  &none       &none        &none       &none      &none       &none
+&none  &none        &none     &none      &none      &none  &none       &none        &none       &none      &none       &none
+&none  &bootloader  &none     &none      &to 0      &none  &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &none
+&none  &kp LGUI     &kp LALT  &kp LCTRL  &kp LSHFT  &none  &none       &none        &none       &none      &none       &none
+&none  &none        &none     &to 6      &to 5      &none  &none       &none        &none       &none      &none       &none
+&none  &none        &none     &none      &none      &none  &none       &none        &none       &none      &none       &none
+            >;
+        };
+
+        sym_layer {
+            bindings = <
+&none  &none          &none         &none          &none          &none         &none  &none      &none      &none     &none        &none
+&none  &kp LS(LBRC)   &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)   &kp LS(RBRC)  &none  &to 0      &none      &none     &bootloader  &none
+&none  &kp LS(COLON)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(PLUS)  &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI     &none
+&none  &kp LS(TILDE)  &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp LS(PIPE)  &none  &to 6      &to 5      &none     &none        &none
+&none  &kp LS(UNDER)  &none         &kp LS(LPAR)   &kp LS(RPAR)   &none         &none  &none      &none      &none     &none        &none
             >;
         };
     };
