@@ -68,6 +68,15 @@
         };
     };
 
+    macros {
+        pwd: pwd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N7 &kp N6 &kp Y &kp H &kp STAR &kp AMPS &kp LS(U) &kp LS(J) &kp N9 &kp N8 &kp I &kp K>;
+            label = "PWD";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -133,7 +142,7 @@
 &none  &none        &none     &none      &none      &none  &none              &none             &none         &none            &none         &none
 &none  &bootloader  &none     &none      &to 0      &none  &none              &none             &none         &none            &none         &none
 &none  &kp LGUI     &kp LALT  &kp LCTRL  &kp LSHFT  &none  &ext_power EP_TOG  &kp K_PREV        &kp C_VOL_DN  &kp C_VOLUME_UP  &kp K_NEXT    &none
-&none  &none        &none     &to 4      &to 3      &none  &none              &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &none
+&none  &none        &none     &to 4      &to 3      &none  &pwd               &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &none
 &none  &trans       &none     &trans     &trans     &none  &none              &kp K_PLAY_PAUSE  &kp K_MUTE    &none            &kp K_STOP    &none
             >;
         };
