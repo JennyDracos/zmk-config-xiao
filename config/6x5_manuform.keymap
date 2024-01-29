@@ -72,7 +72,7 @@
         pwd: pwd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N7 &kp N6 &kp F &kp G &kp STAR &kp AMPS &kp LS(G) &kp LS(H) &kp N9 &kp N8 &kp C &kp T>;
+            bindings = <&kp N7 &kp N6 &kp F &kp D &kp STAR &kp AMPS &kp LS(G) &kp LS(H) &kp N9 &kp N8 &kp C &kp T>;
             label = "PWD";
         };
     };
