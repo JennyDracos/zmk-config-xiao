@@ -95,7 +95,7 @@
 &none  &kp SQT           &kp COMMA     &kp DOT        &kp P                     &kp Y  &kp F  &kp G                &kp C          &kp R         &kp L         &none
 &none  &hm_l LEFT_GUI A  &hm_l LALT O  &hm_l LCTRL E  &hm_shift_l LEFT_SHIFT U  &kp I  &kp D  &hm_shift_r LSHFT H  &hm_r LCTRL T  &hm_r LALT N  &hm_r LWIN S  &none
 &none  &kp SEMI          &kp Q         &kp J          &kp K                     &kp X  &kp B  &kp M                &kp W          &kp V         &kp Z         &none
-&none  &lt 5 TAB         &none         &lt 3 ESCAPE   &lt 1 SPACE               &none  &none  &lt 2 BACKSPACE      &lt 4 DEL      &none         &lt 6 ENTER   &none
+&to 0  &lt 5 TAB         &sl 7         &lt 3 ESCAPE   &lt 1 SPACE               &mo 8  &none  &lt 2 BACKSPACE      &lt 4 DEL      &none         &lt 6 ENTER   &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -114,7 +114,7 @@
 &none       &bootloader   &none         &none         &to 0         &none         &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &none
 &none       &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &none         &kp CAPS    &kp LEFT     &kp DOWN    &kp UP     &kp RIGHT   &none
 &none       &none         &none         &to 2         &to 1         &none         &kp INS     &kp HOME     &kp PG_UP   &kp PG_DN  &kp END     &none
-&none       &trans        &none         &trans        &trans        &none         &none       &kp BSPC     &kp DEL     &none      &kp RET     &none
+&trans      &trans        &trans        &trans        &trans        &trans        &none       &kp BSPC     &kp DEL     &none      &kp RET     &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -129,11 +129,11 @@
             // |     |     |      |      |      |        |                   |       |      |       |       |      |       |
 
             bindings = <
-&none  &none      &none   &none       &none   &none      &none  &none      &none      &none     &none        &none
-&none  &kp LBKT   &kp N7  &kp N8      &kp N9  &kp RBKT   &none  &to 0      &none      &none     &bootloader  &none
-&none  &kp GRAVE  &kp N4  &kp N5      &kp N6  &kp EQUAL  &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI     &none
-&none  &kp SLASH  &kp N1  &kp N2      &kp N3  &kp BSLH   &none  &to 2      &to 1      &none     &none        &none
-&none  &kp MINUS  &none   &kp PERIOD  &kp N0  &none      &none  &trans     &trans     &none     &trans       &none
+&none   &none      &none   &none       &none   &none      &none  &none      &none      &none     &none        &none
+&none   &kp LBKT   &kp N7  &kp N8      &kp N9  &kp RBKT   &none  &to 0      &none      &none     &bootloader  &none
+&none   &kp SEMI   &kp N4  &kp N5      &kp N6  &kp EQUAL  &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI     &none
+&none   &kp GRAVE  &kp N1  &kp N2      &kp N3  &kp BSLH   &none  &to 2      &to 1      &none     &none        &none
+&trans  &kp MINUS  &trans  &kp PERIOD  &kp N0  &trans     &none  &trans     &trans     &none     &trans       &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -141,41 +141,61 @@
 
         media_layer {
             bindings = <
-&none  &none        &none     &none      &none      &none  &none              &none             &none         &none            &none         &none
-&none  &bootloader  &none     &none      &to 0      &none  &none              &none             &none         &none            &none         &none
-&none  &kp LGUI     &kp LALT  &kp LCTRL  &kp LSHFT  &none  &ext_power EP_TOG  &kp C_PREV        &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT    &none
-&none  &none        &none     &to 4      &to 3      &none  &pwd               &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &none
-&none  &trans       &none     &trans     &trans     &none  &none              &kp C_PLAY_PAUSE  &kp C_MUTE    &none            &kp C_STOP    &none
+&none   &none        &none     &none      &none      &none   &none              &none             &none         &none            &none         &none
+&none   &bootloader  &none     &none      &to 0      &none   &none              &none             &none         &none            &none         &none
+&none   &kp LGUI     &kp LALT  &kp LCTRL  &kp LSHFT  &none   &ext_power EP_TOG  &kp K_PREV        &kp C_VOL_DN  &kp C_VOLUME_UP  &kp K_NEXT    &none
+&none   &none        &none     &to 4      &to 3      &none   &pwd               &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &none
+&trans  &trans       &trans    &trans     &trans     &trans  &none              &kp K_PLAY_PAUSE  &kp K_MUTE    &none            &kp K_STOP    &none
             >;
         };
 
         fun_layer {
             bindings = <
-&none  &none    &none   &none       &none      &none            &none  &none      &none      &none     &none        &none
-&none  &kp F12  &kp F7  &kp F8      &kp F9     &kp PRINTSCREEN  &none  &to 0      &none      &none     &bootloader  &none
-&none  &kp F11  &kp F4  &kp F5      &kp F6     &kp SCROLLLOCK   &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI     &none
-&none  &kp F10  &kp F1  &kp F2      &kp F3     &kp PAUSE_BREAK  &none  &to 4      &to 3      &none     &none        &none
-&none  &kp TAB  &none   &kp C_MENU  &kp SPACE  &none            &none  &trans     &trans     &none     &trans       &none
+&none   &none    &none   &none       &none      &none            &none  &none      &none      &none     &none        &none
+&none   &kp F12  &kp F7  &kp F8      &kp F9     &kp PRINTSCREEN  &none  &to 0      &none      &none     &bootloader  &none
+&none   &kp F11  &kp F4  &kp F5      &kp F6     &kp SCROLLLOCK   &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI     &none
+&none   &kp F10  &kp F1  &kp F2      &kp F3     &kp PAUSE_BREAK  &none  &to 4      &to 3      &none     &none        &none
+&trans  &kp TAB  &trans  &kp C_MENU  &kp SPACE  &trans           &none  &trans     &trans     &none     &trans       &none
             >;
         };
 
         mouse_layer {
             bindings = <
-&none  &none        &none     &none      &none      &none  &none      &none      &none      &none      &none      &none
-&none  &bootloader  &none     &none      &to 0      &none  &kp LC(R)  &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Z)  &none
-&none  &kp LGUI     &kp LALT  &kp LCTRL  &kp LSHFT  &none  &none      &none      &none      &none      &none      &none
-&none  &none        &none     &to 6      &to 5      &none  &none      &none      &none      &none      &none      &none
-&none  &trans       &none     &trans     &trans     &none  &none      &trans     &trans     &none      &trans     &none
+&none   &none        &none     &none      &none      &none   &none      &none      &none      &none      &none      &none
+&none   &bootloader  &none     &none      &to 0      &none   &kp LC(R)  &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Z)  &none
+&none   &kp LGUI     &kp LALT  &kp LCTRL  &kp LSHFT  &none   &none      &none      &none      &none      &none      &none
+&none   &none        &none     &to 6      &to 5      &none   &none      &none      &none      &none      &none      &none
+&trans  &trans       &trans    &trans     &trans     &trans  &none      &trans     &trans     &none      &trans     &none
             >;
         };
 
         sym_layer {
             bindings = <
-&none  &none          &none         &none          &none          &none         &none  &none      &none      &none     &none        &none
-&none  &kp LS(LBRC)   &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)   &kp LS(RBRC)  &none  &to 0      &none      &none     &bootloader  &none
-&none  &kp LS(GRAVE)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(PLUS)  &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI     &none
-&none  &kp LS(SLASH)  &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp LS(PIPE)  &none  &to 6      &to 5      &none     &none        &none
-&none  &kp LS(UNDER)  &none         &kp LS(LPAR)   &kp LS(RPAR)   &none         &none  &trans     &trans     &none     &trans       &none
+&none   &none          &none         &none          &none          &none         &none  &none      &none      &none     &none        &none
+&none   &kp LS(LBRC)   &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)   &kp LS(RBRC)  &none  &to 0      &none      &none     &bootloader  &none
+&none   &kp LS(COLON)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(PLUS)  &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI     &none
+&none   &kp LS(TILDE)  &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp LS(PIPE)  &none  &to 6      &to 5      &none     &none        &none
+&trans  &kp LS(UNDER)  &trans        &kp LS(LPAR)   &kp LS(RPAR)   &trans        &none  &trans     &trans     &none     &trans       &none
+            >;
+        };
+
+        mirror_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp L   &kp R   &kp C   &kp G   &kp F   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp S   &kp N   &kp T   &kp H   &kp D   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp Z   &kp V   &kp W   &kp M   &kp B   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        sticky_buttons {
+            bindings = <
+&none   &none     &none     &none      &none      &none   &none  &none  &none  &none  &none  &none
+&none   &none     &none     &none      &none      &none   &none  &none  &none  &none  &none  &none
+&none   &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none   &none  &none  &none  &none  &none  &none
+&none   &none     &none     &none      &none      &none   &none  &none  &none  &none  &none  &none
+&trans  &trans    &trans    &trans     &trans     &trans  &none  &none  &none  &none  &none  &none
             >;
         };
     };
