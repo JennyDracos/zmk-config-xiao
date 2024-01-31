@@ -107,6 +107,80 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <14 15>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <15 16>;
+        };
+
+        ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <14 26>;
+        };
+
+        pound {
+            bindings = <&kp POUND>;
+            key-positions = <15 27>;
+        };
+
+        dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <16 28>;
+        };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <17 29>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <26 27>;
+        };
+
+        repeat {
+            bindings = <&kp LC(R)>;
+            key-positions = <27 28>;
+        };
+
+        grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <26 38>;
+        };
+
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <27 39>;
+        };
+
+        equals {
+            bindings = <&kp EQUAL>;
+            key-positions = <28 40>;
+        };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <29 41>;
+        };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <37 38>;
+        };
+
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <39 40>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
