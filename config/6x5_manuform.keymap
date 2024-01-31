@@ -119,9 +119,21 @@
     combos {
         compatible = "zmk,combos";
 
-        period {
-            bindings = <&kp PERIOD>;
-            key-positions = <25 26>;
+        lreset {
+            bindings = <&sys_reset>;
+            key-positions = <13 26 39 28 17>;
+            timeout-ms = <75>;
+        };
+
+        rreset {
+            bindings = <&sys_reset>;
+            key-positions = <18 31 44 33 22>;
+            timeout-ms = <75>;
+        };
+
+        password {
+            bindings = <&pwd>;
+            key-positions = <13 14 15 16>;
             timeout-ms = <75>;
         };
 
@@ -131,27 +143,9 @@
             timeout-ms = <75>;
         };
 
-        comma {
-            bindings = <&kp COMMA>;
-            key-positions = <26 27>;
-            timeout-ms = <75>;
-        };
-
         semicolon {
             bindings = <&kp SEMICOLON>;
             key-positions = <25 26 27>;
-            timeout-ms = <75>;
-        };
-
-        quote {
-            bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <26 15>;
-            timeout-ms = <75>;
-        };
-
-        doublequote {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <26 16>;
             timeout-ms = <75>;
         };
 
@@ -164,6 +158,36 @@
         end {
             bindings = <&kp END>;
             key-positions = <14 15 16>;
+            timeout-ms = <75>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <25 26 27>;
+            timeout-ms = <75>;
+        };
+
+        period {
+            bindings = <&kp PERIOD>;
+            key-positions = <25 26>;
+            timeout-ms = <75>;
+        };
+
+        comma {
+            bindings = <&kp COMMA>;
+            key-positions = <26 27>;
+            timeout-ms = <75>;
+        };
+
+        quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <26 15>;
+            timeout-ms = <75>;
+        };
+
+        doublequote {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <26 16>;
             timeout-ms = <75>;
         };
 
@@ -185,29 +209,12 @@
             timeout-ms = <75>;
         };
 
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <25 26 27>;
-            timeout-ms = <75>;
-        };
-
         tab {
             bindings = <&kp TAB>;
             key-positions = <27 28>;
             timeout-ms = <75>;
         };
 
-        lreset {
-            bindings = <&sys_reset>;
-            key-positions = <13 26 39 28 17>;
-            timeout-ms = <75>;
-        };
-
-        rreset {
-            bindings = <&sys_reset>;
-            key-positions = <18 31 44 33 22>;
-            timeout-ms = <75>;
-        };
 
         slash {
             bindings = <&kp SLASH>;
@@ -275,6 +282,18 @@
             timeout-ms = <75>;
         };
 
+        pound {
+            bindings = <&kp POUND>;
+            key-positions = <14 15 16>;
+            timeout-ms = <75>;
+        };
+
+        asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <38 39 40>;
+            timeout-ms = <75>;
+        };
+
         underscore {
             bindings = <&kp UNDER>;
             key-positions = <40 41>;
@@ -296,6 +315,12 @@
         plus {
             bindings = <&kp PLUS>;
             key-positions = <29 28 27>;
+            timeout-ms = <75>;
+        };
+
+        atsign {
+            bindings = <&kp AT>;
+            key-positions = <14 27 28>;
             timeout-ms = <75>;
         };
 
@@ -335,27 +360,9 @@
             timeout-ms = <75>;
         };
 
-        atsign {
-            bindings = <&kp AT>;
-            key-positions = <14 27 28>;
-            timeout-ms = <75>;
-        };
-
         ampersand {
             bindings = <&kp AMPS>;
             key-positions = <27 29>;
-            timeout-ms = <75>;
-        };
-
-        asterisk {
-            bindings = <&kp ASTERISK>;
-            key-positions = <38 39 40>;
-            timeout-ms = <75>;
-        };
-
-        pound {
-            bindings = <&kp POUND>;
-            key-positions = <14 15 16>;
             timeout-ms = <75>;
         };
 
@@ -389,11 +396,6 @@
             timeout-ms = <75>;
         };
 
-        password {
-            bindings = <&pwd>;
-            key-positions = <13 14 15 16>;
-            timeout-ms = <75>;
-        };
     };
 
     keymap {
