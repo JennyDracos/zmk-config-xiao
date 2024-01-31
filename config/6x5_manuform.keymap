@@ -179,6 +179,16 @@
             bindings = <&kp LC(V)>;
             key-positions = <39 40>;
         };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <16 17>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <40 41>;
+        };
     };
 
     keymap {
