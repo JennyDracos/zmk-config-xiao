@@ -122,231 +122,277 @@
         period {
             bindings = <&kp PERIOD>;
             key-positions = <25 26>;
+            timeout-ms = <75>;
         };
 
         colon {
             bindings = <&kp COLON>;
             key-positions = <25 26 28>;
+            timeout-ms = <75>;
         };
 
         comma {
             bindings = <&kp COMMA>;
             key-positions = <26 27>;
+            timeout-ms = <75>;
         };
 
         semicolon {
             bindings = <&kp SEMICOLON>;
             key-positions = <25 26 27>;
+            timeout-ms = <75>;
         };
 
         quote {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <26 15>;
+            timeout-ms = <75>;
         };
 
         doublequote {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <26 16>;
+            timeout-ms = <75>;
         };
 
         home {
             bindings = <&kp HOME>;
             key-positions = <13 14 15>;
+            timeout-ms = <75>;
         };
 
         end {
             bindings = <&kp END>;
             key-positions = <14 15 16>;
+            timeout-ms = <75>;
         };
 
         pgup {
             bindings = <&kp PAGE_UP>;
             key-positions = <26 29>;
+            timeout-ms = <75>;
         };
 
         pgdn {
             bindings = <&kp PAGE_DOWN>;
             key-positions = <38 41>;
+            timeout-ms = <75>;
         };
 
         insert {
             bindings = <&kp INSERT>;
             key-positions = <58 55>;
+            timeout-ms = <75>;
         };
 
         enter {
             bindings = <&kp ENTER>;
             key-positions = <25 26 27>;
+            timeout-ms = <75>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <27 28>;
+            timeout-ms = <75>;
         };
 
         lreset {
             bindings = <&sys_reset>;
             key-positions = <13 26 39 28 17>;
+            timeout-ms = <75>;
         };
 
         rreset {
             bindings = <&sys_reset>;
             key-positions = <18 31 44 33 22>;
+            timeout-ms = <75>;
         };
 
         slash {
             bindings = <&kp SLASH>;
             key-positions = <38 27 16>;
+            timeout-ms = <75>;
         };
 
         backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <14 27 40>;
+            timeout-ms = <75>;
         };
 
         lessthan {
             bindings = <&kp LESS_THAN>;
             key-positions = <15 26>;
+            timeout-ms = <75>;
         };
 
         greaterthan {
             bindings = <&none>;
             key-positions = <15 28>;
+            timeout-ms = <75>;
         };
 
         caret {
             bindings = <&kp CARET>;
             key-positions = <26 15 28>;
+            timeout-ms = <75>;
         };
 
         tilde {
             bindings = <&kp TILDE>;
             key-positions = <25 16>;
+            timeout-ms = <75>;
         };
 
         grave {
             bindings = <&none>;
             key-positions = <13 26>;
+            timeout-ms = <75>;
         };
 
         percent {
             bindings = <&kp PERCENT>;
             key-positions = <14 40>;
+            timeout-ms = <75>;
         };
 
         bang {
             bindings = <&kp EXCL>;
             key-positions = <28 15 14>;
+            timeout-ms = <75>;
         };
 
         question {
             bindings = <&none>;
             key-positions = <26 27 16>;
+            timeout-ms = <75>;
         };
 
         cha-ching {
             bindings = <&kp DOLLAR>;
             key-positions = <38 39 16>;
+            timeout-ms = <75>;
         };
 
         underscore {
             bindings = <&kp UNDER>;
             key-positions = <40 41>;
+            timeout-ms = <75>;
         };
 
         minus {
             bindings = <&kp MINUS>;
             key-positions = <28 29>;
+            timeout-ms = <75>;
         };
 
         equals {
             bindings = <&kp EQUAL>;
             key-positions = <16 17>;
+            timeout-ms = <75>;
         };
 
         plus {
             bindings = <&kp PLUS>;
             key-positions = <29 28 27>;
+            timeout-ms = <75>;
         };
 
         lbracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <15 52>;
+            timeout-ms = <75>;
         };
 
         rbracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <16 52>;
+            timeout-ms = <75>;
         };
 
         lparen {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <27 52>;
+            timeout-ms = <75>;
         };
 
         rparen {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <28 52>;
+            timeout-ms = <75>;
         };
 
         lbrace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <39 52>;
+            timeout-ms = <75>;
         };
 
         rbrace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <40 52>;
+            timeout-ms = <75>;
         };
 
         atsign {
             bindings = <&kp AT>;
             key-positions = <14 27 28>;
+            timeout-ms = <75>;
         };
 
         ampersand {
             bindings = <&kp AMPS>;
             key-positions = <27 29>;
+            timeout-ms = <75>;
         };
 
         asterisk {
             bindings = <&kp ASTERISK>;
             key-positions = <38 39 40>;
+            timeout-ms = <75>;
         };
 
         pound {
             bindings = <&kp POUND>;
             key-positions = <14 15 16>;
+            timeout-ms = <75>;
         };
 
         prev {
             bindings = <&kp K_PREV>;
             key-positions = <41 17>;
+            timeout-ms = <75>;
         };
 
         next {
             bindings = <&kp K_NEXT>;
             key-positions = <47 35>;
+            timeout-ms = <75>;
         };
 
         mute {
             bindings = <&kp K_MUTE>;
             key-positions = <35 23>;
+            timeout-ms = <75>;
         };
 
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <37 38>;
+            timeout-ms = <75>;
         };
 
         delete {
             bindings = <&kp DELETE>;
             key-positions = <38 39>;
+            timeout-ms = <75>;
         };
 
         password {
             bindings = <&pwd>;
             key-positions = <13 14 15 16>;
+            timeout-ms = <75>;
         };
     };
 
