@@ -163,7 +163,7 @@
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <25 26 27>;
+            key-positions = <26 27 28>;
             timeout-ms = <75>;
         };
 
@@ -214,7 +214,6 @@
             key-positions = <27 28>;
             timeout-ms = <75>;
         };
-
 
         slash {
             bindings = <&kp SLASH>;
@@ -395,7 +394,6 @@
             key-positions = <38 39>;
             timeout-ms = <75>;
         };
-
     };
 
     keymap {
