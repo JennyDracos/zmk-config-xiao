@@ -74,6 +74,8 @@
             label = "NUMWORD";
             #binding-cells = <0>;
             continue-list = <BACKSPACE COMMA PERIOD DELETE>;
+            layers = 2;
+            ignore-numbers;
         };
     };
 
