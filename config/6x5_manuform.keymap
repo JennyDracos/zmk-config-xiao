@@ -172,7 +172,7 @@
 
         copy {
             bindings = <&kp LC(C)>;
-            key-positions = <37 38>;
+            key-positions = <38 39>;
         };
 
         paste {
