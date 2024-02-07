@@ -146,7 +146,7 @@
         };
 
         repeat {
-            bindings = <&kp LC(R)>;
+            bindings = <&key_repeat>;
             key-positions = <27 28>;
         };
 
@@ -188,6 +188,11 @@
         delete {
             bindings = <&kp DELETE>;
             key-positions = <40 41>;
+        };
+
+        pwdshortcut {
+            bindings = <&kp LC(SEMI)>;
+            key-positions = <37 38>;
         };
     };
 
