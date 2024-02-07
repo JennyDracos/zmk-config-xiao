@@ -105,6 +105,13 @@
 
             label = "DEGREE";
         };
+
+        numword: numword {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "NUMWORD";
+        };
     };
 
     combos {
@@ -193,6 +200,12 @@
         pwdshortcut {
             bindings = <&kp LC(SEMI)>;
             key-positions = <37 38>;
+        };
+
+        nwenter {
+            bindings = <&numword ENTER>;
+            key-positions = <15 16>;
+            layers = <2>;
         };
     };
 
