@@ -68,6 +68,16 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <13 14 15 16 17 25 26 27 28 29 37 38 39 40 41 48 49 50 51 52 53 54 55 56 57 58 59>;
         };
+
+        holdholdtaptap: holdholdtaptap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLDHOLDTAPTAP";
+            bindings = <&mo>, <&to>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            retro-tap;
+        };
     };
 
     macros {
@@ -221,11 +231,11 @@
             // |    2   |  2  | f   | 6    | 4    | 1    |                    | 2    | 1     | w     | s    | n     |  a    |
 
             bindings = <
-&kp LGUI   &kp F1            &plus_minus   &degree        &kp F13                   &kp F14  &none  &none                &none          &none         &none         &none
-&kp LALT   &kp SQT           &kp COMMA     &kp DOT        &kp P                     &kp Y    &kp F  &kp G                &kp C          &kp R         &kp L         &none
-&kp LCTRL  &hm_l LEFT_GUI A  &hm_l LALT O  &hm_l LCTRL E  &hm_shift_l LEFT_SHIFT U  &kp I    &kp D  &hm_shift_r LSHFT H  &hm_r LCTRL T  &hm_r LALT N  &hm_r LWIN S  &none
-&kp LSHFT  &kp SEMI          &kp Q         &kp J          &kp K                     &kp X    &kp B  &kp M                &kp W          &kp V         &kp Z         &none
-&to 0      &lt 5 TAB         &sl 7         &lt 3 ESCAPE   &lt 1 SPACE               &to 2    &none  &lt 2 BACKSPACE      &lt 4 DEL      &none         &lt 6 ENTER   &none
+&kp LGUI   &kp F1            &plus_minus   &degree        &kp F13                   &kp F14              &none  &none                &none          &none         &none         &none
+&kp LALT   &kp SQT           &kp COMMA     &kp DOT        &kp P                     &kp Y                &kp F  &kp G                &kp C          &kp R         &kp L         &none
+&kp LCTRL  &hm_l LEFT_GUI A  &hm_l LALT O  &hm_l LCTRL E  &hm_shift_l LEFT_SHIFT U  &kp I                &kp D  &hm_shift_r LSHFT H  &hm_r LCTRL T  &hm_r LALT N  &hm_r LWIN S  &none
+&kp LSHFT  &kp SEMI          &kp Q         &kp J          &kp K                     &kp X                &kp B  &kp M                &kp W          &kp V         &kp Z         &none
+&to 0      &lt 5 TAB         &sl 7         &lt 3 ESCAPE   &lt 1 SPACE               &holdholdtaptap 2 2  &none  &lt 2 BACKSPACE      &lt 4 DEL      &none         &lt 6 ENTER   &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
