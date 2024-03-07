@@ -10,6 +10,8 @@
 
 &lt { quick-tap-ms = <190>; };
 
+&sk { quick-release; };
+
 / {
     behaviors {
         hm_l: hm_l {
