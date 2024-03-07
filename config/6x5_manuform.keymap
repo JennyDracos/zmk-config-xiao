@@ -112,7 +112,7 @@
         shiftsym: shiftsym {
             compatible = "zmk,behavior-mod-morph";
             label = "SHIFTSYM";
-            bindings = <&sticky_hold 2 2>, <&mo 3>;
+            bindings = <&sl 2>, <&sl 3>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
