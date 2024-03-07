@@ -81,7 +81,7 @@
         sticky_hold: sticky_hold {
             compatible = "zmk,behavior-hold-tap";
             label = "Sticky on tap, hold on hold";
-            bindings = <&to>, <&sl>;
+            bindings = <&mo>, <&sl>;
 
             #binding-cells = <2>;
             flavor = "balanced";
