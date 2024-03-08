@@ -112,10 +112,20 @@
         shiftsym: shiftsym {
             compatible = "zmk,behavior-mod-morph";
             label = "SHIFTSYM";
-            bindings = <&sl 2>, <&sl 3>;
+            bindings = <&to_hold 2 2>, <&sl 3>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
+        };
+
+        to_hold: to_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "@to on tap, @mo on hold";
+            bindings = <&mo>, <&to>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
         };
     };
 
@@ -270,11 +280,11 @@
             // |    2   |  2  | f   | 6    | 4    | 1    |                    | 2    | 1     | w     | s    | n     |  a    |
 
             bindings = <
-&kp ESCAPE        &kp N1    &kp N2     &kp N3     &kp N4     &kp N5    &kp N6    &kp N7     &kp N8    &kp N9            &kp N0   &kp EQUAL
-&kp TAB           &kp SQT   &kp COMMA  &kp DOT    &kp P      &kp Y     &kp F     &kp G      &kp C     &kp R             &kp L    &kp FSLH
-&shiftmorph       &kp A     &kp O      &kp E      &kp U      &kp I     &kp D     &kp H      &kp T     &kp N             &kp S    &kp MINUS
-&sk LEFT_CONTROL  &kp SEMI  &kp Q      &kp J      &kp K      &kp X     &kp B     &kp M      &kp W     &kp V             &kp Z    &kp BSLH
-&kp LCTRL         &kp BSPC  &shiftsym  &kp LSHFT  &kp SPACE  &kp LALT  &kp RALT  &kp ENTER  &kp RGUI  &sticky_hold 1 1  &kp DEL  &kp RCTRL
+&kp ESCAPE        &kp N1      &kp N2     &kp N3     &kp N4     &kp N5    &kp N6    &kp N7     &kp N8    &kp N9            &kp N0         &kp EQUAL
+&kp TAB           &kp SQT     &kp COMMA  &kp DOT    &kp P      &kp Y     &kp F     &kp G      &kp C     &kp R             &kp L          &kp FSLH
+&shiftmorph       &kp A       &kp O      &kp E      &kp U      &kp I     &kp D     &kp H      &kp T     &kp N             &kp S          &kp MINUS
+&sk LEFT_CONTROL  &kp SEMI    &kp Q      &kp J      &kp K      &kp X     &kp B     &kp M      &kp W     &kp V             &kp Z          &kp BSLH
+&kp LCTRL         &kp DELETE  &shiftsym  &kp LSHFT  &kp SPACE  &kp LALT  &kp RALT  &kp ENTER  &kp RGUI  &sticky_hold 1 1  &kp BACKSPACE  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
