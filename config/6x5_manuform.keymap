@@ -319,11 +319,11 @@
             // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
 
             bindings = <
-&trans  &bt BT_SEL 0  &kp F10  &kp F11  &kp F12  &bt BT_SEL 4  &none       &none        &none       &none      &none       &none
-&trans  &kp F12       &kp F7   &kp F8   &kp F9   &kp F15       &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &none
-&trans  &kp F11       &kp F4   &kp F5   &kp F6   &kp F14       &kp CAPS    &kp LEFT     &kp DOWN    &kp UP     &kp RIGHT   &none
-&trans  &kp F10       &kp F1   &kp F2   &kp F3   &kp F13       &kp INS     &kp HOME     &kp PG_UP   &kp PG_DN  &kp END     &none
-&trans  &trans        &trans   &trans   &trans   &trans        &trans      &trans       &trans      &trans     &trans      &trans
+&trans  &none    &kp F10  &kp F11  &kp F12  &none    &none       &none        &degree     &none      &none       &none
+&trans  &kp F12  &kp F7   &kp F8   &kp F9   &kp F15  &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &none
+&trans  &kp F11  &kp F4   &kp F5   &kp F6   &kp F14  &kp CAPS    &kp LEFT     &kp DOWN    &kp UP     &kp RIGHT   &none
+&trans  &kp F10  &kp F1   &kp F2   &kp F3   &kp F13  &kp INS     &kp HOME     &kp PG_UP   &kp PG_DN  &kp END     &none
+&trans  &trans   &trans   &trans   &trans   &trans   &trans      &trans       &trans      &trans     &trans      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -350,7 +350,7 @@
 
         sym_layer {
             bindings = <
-&trans  &none          &kp UNDER     &kp RIGHT_PARENTHESIS  &none          &none         &none  &none      &none      &none     &none        &none
+&trans  &none          &kp UNDER     &kp RIGHT_PARENTHESIS  &none          &none         &none  &none      &degree    &none     &none        &plus_minus
 &trans  &kp LS(LBRC)   &kp LS(AMPS)  &kp LS(STAR)           &kp LS(LPAR)   &kp LS(RBRC)  &none  &to 0      &none      &none     &bootloader  &none
 &trans  &kp LS(GRAVE)  &kp LS(DLLR)  &kp LS(PRCNT)          &kp LS(CARET)  &kp LS(PLUS)  &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI     &none
 &trans  &kp LS(SLASH)  &kp LS(EXCL)  &kp LS(AT)             &kp LS(POUND)  &kp LS(PIPE)  &none  &to 3      &to 0      &none     &none        &none
